@@ -5,5 +5,53 @@
 
 @import 'global';
 
+.header{
+  max-width: 100%;
+  &__top{
+     background-color:$dark-800;
+     min-height: 50px;
+    &-inner{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 0;
+    }
+  }
+  &__requisites{
+    &-wrapper{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-item:not(:last-child){
+      margin-right: 48px;
+    }
+    &-item{
+      padding-left: 40px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      // &--adress{
+      //   background-image: url(../../build/img/sprite.svg#hotline);
+      // }
+
+      // &--hotline{
+      //   background-image: url(../../src/img/sprite.svg#hotline.svg);
+      // }
+    }
+  }
+  &__contacts{
+    display: flex;
+  }
+
+  &__nav{
+    &-list{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+}
+
+}
 
 @import 'media';
